@@ -76,10 +76,11 @@ export default {
   padding: 10px;
 }
 .list-page .el-footer {
+  border-top: 1px solid #DCDFE6;
   padding: 10px;
 }
 .list-page .el-main {
-  padding: 0px 10px 10px 10xp;
+  padding: 0px 10px 10px 10px;
   overflow: auto;
 }
 </style>

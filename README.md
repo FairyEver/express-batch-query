@@ -1,25 +1,10 @@
-# zhong-tong-express-batch-query
+# 中通快递单号批量查询
 
-> zhong-tong-express-batch-query
+需要登陆中通快递内部系统然后自动批量查询单号信息
 
-#### Build Setup
+这个项目做到一半不做了，由于用户登陆校验太多，改用浏览器插件形式获取数据
 
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:9080
-npm run dev
-
-# build electron application for production
-npm run build
+新项目见 [https://github.com/FairyEver/zhong-tong-express-batch-query-browser-plug-in](https://github.com/FairyEver/zhong-tong-express-batch-query-browser-plug-in)
 
 
-# lint all JS/Vue component files in `src/`
-npm run lint
 
-```
-
----
-
-This project was generated with [electron-vue](https://github.com/SimulatedGREG/electron-vue) using [vue-cli](https://github.com/vuejs/vue-cli). Documentation about the original structure can be found [here](https://simulatedgreg.gitbooks.io/electron-vue/content/index.html).

@@ -1,16 +1,20 @@
 <template>
   <el-container class="list-page">
     <el-aside width="200px">
+      <!-- 单号 -->
       <NumbersControl></NumbersControl>
     </el-aside>
     <el-container>
       <el-header>
+        <!-- 地址 -->
         <UrlControl></UrlControl>
       </el-header>
       <el-main>
+        <!-- 表格显示 -->
         <TableControl></TableControl>
       </el-main>
       <el-footer>
+        <!-- 用户控制 -->
         <OperationControl></OperationControl>
       </el-footer>
     </el-container>

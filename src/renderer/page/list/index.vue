@@ -15,7 +15,10 @@
       </el-main>
       <el-footer>
         <!-- 用户控制 -->
-        <OperationControl></OperationControl>
+        <OperationControl
+          :disabled="ids.length === 0"
+          @start="handleStart">
+        </OperationControl>
       </el-footer>
     </el-container>
   </el-container>
@@ -43,6 +46,10 @@ export default {
       axios.get('https://www.easy-mock.com/mock/5aa4a745d2fb8103717472c0/zt/search').then(res => {
         console.log(res)
       })
+    },
+    // 开始搜索
+    handleStart () {
+      console.log('开始搜索')
     }
   }
 }

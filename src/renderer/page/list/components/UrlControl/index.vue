@@ -8,9 +8,8 @@
 export default {
   data () {
     return {
-      url: 'Hello'
+      url: 'http://q158724w01.iok.la/'
     }
   }
 }
 </script>
-

@@ -22,6 +22,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
   components: {
     IdsControl: () => import('./components/IdsControl'),
@@ -32,6 +33,16 @@ export default {
   data () {
     return {
       ids: []
+    }
+  },
+  mounted () {
+    this.search()
+  },
+  methods: {
+    search (id) {
+      axios.get('https://www.easy-mock.com/mock/5aa4a745d2fb8103717472c0/zt/search').then(res => {
+        console.log(res)
+      })
     }
   }
 }
@@ -61,12 +72,14 @@ export default {
   border-right: 1px solid #DCDFE6;
   padding: 10px;
 }
-.list-page .el-header,
+.list-page .el-header {
+  padding: 10px;
+}
 .list-page .el-footer {
   padding: 10px;
 }
 .list-page .el-main {
-  padding: 0px 10px;
+  padding: 0px 10px 10px 10xp;
   overflow: auto;
 }
 </style>

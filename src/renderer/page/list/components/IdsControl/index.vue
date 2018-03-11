@@ -16,6 +16,13 @@
 
 <script>
 export default {
+  props: {
+    value: {
+      type: Array,
+      required: false,
+      default: []
+    }
+  },
   data () {
     return {
       ids: []
@@ -31,6 +38,7 @@ export default {
             type: 'success'
           })
           this.ids = results.map(e => e.id)
+          this.$emit('input', this.ids)
         })
       return false
     }

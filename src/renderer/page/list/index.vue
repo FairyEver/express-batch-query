@@ -2,7 +2,7 @@
   <el-container class="list-page">
     <el-aside width="200px">
       <!-- 单号 -->
-      <IdsControl></IdsControl>
+      <IdsControl v-model="ids"></IdsControl>
     </el-aside>
     <el-container>
       <el-header>
@@ -28,6 +28,11 @@ export default {
     UrlControl: () => import('./components/UrlControl'),
     TableControl: () => import('./components/TableControl'),
     OperationControl: () => import('./components/OperationControl')
+  },
+  data () {
+    return {
+      ids: []
+    }
   }
 }
 </script>

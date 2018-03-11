@@ -2,7 +2,7 @@
   <el-container class="list-page">
     <el-aside width="200px">
       <!-- 单号 -->
-      <NumbersControl></NumbersControl>
+      <IdsControl></IdsControl>
     </el-aside>
     <el-container>
       <el-header>
@@ -24,7 +24,7 @@
 <script>
 export default {
   components: {
-    NumbersControl: () => import('./components/NumbersControl'),
+    IdsControl: () => import('./components/IdsControl'),
     UrlControl: () => import('./components/UrlControl'),
     TableControl: () => import('./components/TableControl'),
     OperationControl: () => import('./components/OperationControl')
@@ -35,6 +35,22 @@ export default {
 <style>
 .list-page {
   height: 100%;
+}
+.list-page .el-upload {
+  display: block;
+}
+.list-page .ids {
+  padding: 0px;
+  margin: 10px -10px 0px -10px;
+}
+.list-page .ids li {
+  font-size: 12px;
+  list-style: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.list-page .ids li:hover {
+  background-color: #EBEEF5;
 }
 .list-page .el-aside {
   border-right: 1px solid #DCDFE6;

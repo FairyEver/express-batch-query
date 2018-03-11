@@ -1,8 +1,8 @@
 {
-  "name": "zhong-tong-express-batch-query",
+  "name": "express-batch-query",
   "version": "0.0.0",
   "author": "李杨 <1711467488@qq.com>",
-  "description": "zhong-tong-express-batch-query",
+  "description": "express-batch-query",
   "license": null,
   "main": "./dist/electron/main.js",
   "scripts": {
@@ -19,7 +19,7 @@
     "postinstall": "npm run lint:fix"
   },
   "build": {
-    "productName": "zhong-tong-express-batch-query",
+    "productName": "express-batch-query",
     "appId": "org.simulatedgreg.electron-vue",
     "directories": {
       "output": "build"

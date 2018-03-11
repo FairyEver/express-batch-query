@@ -6,7 +6,7 @@
 
 <script>
   export default {
-    name: 'zhong-tong-express-batch-query'
+    name: 'express-batch-query'
   }
 </script>
 

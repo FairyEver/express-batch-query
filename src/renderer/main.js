@@ -8,7 +8,11 @@ import store from './store'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
+// 插件 导出文件
+import pluginImport from '@/plugin/import'
+
 Vue.use(ElementUI)
+Vue.use(pluginImport)
 
 if (!process.env.IS_WEB) Vue.use(require('vue-electron'))
 Vue.http = Vue.prototype.$http = axios
